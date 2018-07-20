@@ -4,7 +4,7 @@ Admin Toolbar Menu:
 	1.	Life is miserable without it!
 
 Libraries:
-	1.	Install Libraries (only if you plan to use the drag and drop DropZone javascript library.
+	1.	Install Libraries (Optional - only necessary if you plan to use things like the drag and drop (DropZone) javascript library)
 
 Modules:
 	1.	Install Embed - Stable release
@@ -59,8 +59,3 @@ AND FINALLY, the last step, add the embed button to the WYSIWYG
 	3.	Move display embedded images to the top of the list.
 	4.	Note allowed HTML tags.
 	5.	Save configuration
-
-
-
-
-
