@@ -1,0 +1,66 @@
+Steps:
+
+Admin Toolbar Menu:
+	1.	Life is miserable without it!
+
+Libraries:
+	1.	Install Libraries (only if you plan to use the drag and drop DropZone javascript library.
+
+Modules:
+	1.	Install Embed - Stable release
+	2.	Install Entity Embed (API) - Note that this module is still in Beta, which is not considered stable or covered by the Security Advisory Policy.
+	3.	Install Entity Browser - Stable release
+	4.	Install Chaos tool suite module
+
+Install Media:
+	1.	Media module not enabled by default, enable it.
+	2.	Clear (rebuild) caches or Media won’t appear in the Content area.
+	3.	Note that Media includes four types of media by default.
+	4.	Note that even though Media is now enabled, it’s not available anywhere.
+	5.	By default, Media only includes one View Mode, the “Full” content, but since we won't want full-size images to display in our Media Browser, we will need to create a “Thumbnail" View Mode so we can have consistent thumbnails display when browsing for an image instead so we might as well create it now.  
+
+View Modes:
+	1.	Go to /admin/structure/display-modes/view and add the “Thumbnail” View Mode to the Media section.
+	2.	Add the Thumbnail View Mode to our Image Media Type. (/admin/structure/media/manage/image/display).
+	⁃	Go to Manage Display tab
+	⁃	Check Thumbnail under Custom Display Settings at the bottom.
+	⁃	On Thumbnail tab, set image size and unlink it.
+
+Configuration:
+Build the user interface (the Media Browser) that allows us to select the media we are inserting into the content area or content type. For this we will use Views.
+
+	1.	Add an Entity Browser display - note that the Master display will disappear after you’ve added a new display, this can be changed in the Views settings.
+	2.	Change Unformatted List to a Table, set the Default Sort to the Media name. Apply and Save
+	3.	Under the Fields heading, click on Media: Name and uncheck the Link to Media checkbox 
+	4.	Add the Media Image field and set to Thumbnail.
+	5.	Add Entity Browser bulk select form (this is what gives you the browser window with the list of media). Change label to “Select a Media Item” or similar.
+
+OK, the Media (entity) Browser View is ready to go. Now let’s add the Entity Browser to the Content Authoring section, followed by adding an embed button to the WYSIWYG so we can use it to add Media to our pages. (/admin/config/content/entity_browser)
+
+	1.	Click add Entity Browser button
+	2.	Label it Media Browser
+	3.	Change to iFrame / Next
+	4.	Change size to 1024 x 768 (min), make the link text Select Media or similar, Auto open browser. / Next
+	5.	Select View for the widget plugin (note, you could also add and upload widget later).
+	6.	Add a label name such as Media Browser, add button text Select Media and select Media Browser for the View to display
+	7.	Click Finish
+
+OK, we’re almost done, next step is to add (create) a Media Embed button. Note that when you get to the Embed Button screen there is already an Embed button for “node” that was created by the Entity Embed module when it was installed.
+
+	1.	Click Add Embed Button
+	2.	Add a label such as “Add Media” (note, if you had decided to add one button for each type of media, you would use that name (image, video, etc) here.
+	3.	Embed type is “Entity,” Entity type is “Media,” Entity browser is Media Browser. The rest are defaults.
+	4.	No need for a button but they are nice.
+
+AND FINALLY, the last step, add the embed button to the WYSIWYG
+
+	1.	I recommend limiting the max upload file size to something reasonable, like 2MB. However, documents are media and can be much larger than that in some cases.
+	2.	***VERY IMPORTANT*** Check the box to Display Embedded Entities!!!
+	3.	Move display embedded images to the top of the list.
+	4.	Note allowed HTML tags.
+	5.	Save configuration
+
+
+
+
+
