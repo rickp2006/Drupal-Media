@@ -23,9 +23,9 @@ Install Media:
 View Modes:
 	1.	Go to /admin/structure/display-modes/view and add the “Thumbnail” View Mode to the Media section.
 	2.	Add the Thumbnail View Mode to our Image Media Type. (/admin/structure/media/manage/image/display).
-	⁃	Go to Manage Display tab
-	⁃	Check Thumbnail under Custom Display Settings at the bottom.
-	⁃	On Thumbnail tab, set image size and unlink it.
+	3.	Go to Manage Display tab
+	4.	Check Thumbnail under Custom Display Settings at the bottom.
+	5.	On Thumbnail tab, set image size and unlink it.
 
 Configuration:
 
