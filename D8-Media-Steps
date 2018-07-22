@@ -1,10 +1,10 @@
 Steps:
 
 Admin Toolbar Menu:
-	1.	Life is miserable without it!
+	1.	Life is miserable without it so I've pre-installed it to save time.
 
 Libraries:
-	1.	Install Libraries (Optional - only necessary if you plan to use things like the drag and drop (DropZone) javascript library)
+	1.	Install Libraries (Optional - only necessary if you plan to use things like the drag and drop (DropZone) javascript library. These are great but we won't cover that here.)
 
 Modules:
 	1.	Install Embed - Stable release
@@ -30,7 +30,7 @@ View Modes:
 Configuration:
 
 Media Browser View:
-Build the user interface (the Media Browser) that allows us to select the media we are inserting into the content area or content type. For this we will use Views.
+	Build the user interface (the Media Browser) that allows us to select the media we are inserting into the content area or content type. For this we will use Views. Note that we are going to build a full-functioning version, but it's possible to build or even find a more visually "slick" version.
 
 	1.	Add an Entity Browser display - note that the Master display will disappear after you’ve added a new display, this can be changed in the Views settings.
 	2.	Change Unformatted List to a Table, set the Default Sort to the Media name. Apply and Save
